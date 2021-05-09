@@ -4,11 +4,11 @@ In the project directory, you can run below commands to run product locally:
 ### `npm install`
 
 ### `npm start`
-# This command will open the application in browser on post 3000.
+### This command will open the application in browser on post 3000.
 
 
 Runs the app in the development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3000] to view it in the browser.
 
 # About Application
 1. This product is developed to keep track of driving trip of people.
@@ -17,10 +17,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Command 1: "Driver", which will register a new Driver in the app.
 Example:
-`Driver Terence`
+`Driver SimpleOne`
 
 ## Command 2: "Trip", which will record a trip attributed to a driver. 
-`Trip Terence 07:15 07:45 17.3` (Command, Driver Name, Start Time, End Time, Distance Travelled)
+`Trip SimpleOne 07:15 07:45 17.3` (Command, Driver Name, Start Time, End Time, Distance Travelled)
 
 ## Applications Requirements or Assumptions stated.
 1. Discard any trips that average a speed of less than 5 mph or greater than 100 mph
@@ -68,11 +68,11 @@ Trip Charlie 08:30 09:45 50.8
 
 ## Code structure
 1. Production build will be generated in "build" folder using `npm run build`
-2. "driverHistory.txt" is a sample txt file 
+2. "SampleInput.txt" is a sample txt file 
 3. "src"  is the core folder of product
 ## index.js - will render our application by injecting App.js 
 ## app.js - will work a main container of all child elements/components
 ## components - 2 react components are created in this  folder
 ### 1. FileInput.js - this component will render text input field in UI, process uploaded file, get the result by calling services and pass it to App component.
 ### 2. TripReport.s - App component will pass result object to this table and this react component will render report as a responsive table in UI
-## Helper.js - This component does all the business logic calculations and creates the final report data and passes to the App.js which inturn passes to the TripReport for displaying it on screen.
+### 3. Helper.js - This component does all the business logic calculations and creates the final report data and passes to the App.js which inturn passes to the TripReport for displaying it on screen.
